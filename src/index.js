@@ -16,7 +16,9 @@ Tasks.push(new Todo('Read', false, (count += 1)));
 Tasks.push(new Todo('Yoga', false, (count += 1)));
 Tasks.push(new Todo('Cook', false, (count += 1)));
 
-const Items = document.getElementById('items');
+const Items = document.createElement('div');
+
+console.log(Items);
 
 const addList = () => {
     Tasks.forEach((task) => {
@@ -28,11 +30,11 @@ const addList = () => {
     checkBox.type = 'checkbox';
     taskItem.classList.add('element');
     taskItem.appendChild(checkBox);
-    taskItem.appendChild(descriptionItem);
+    taskItem.appendChild(descriptionElem);
     Items.appendChild(taskItem);
     });
 
-
+document.getElementById('items').appendChild(Items);
 
 const removeButton = document.createElement('button');
 removeButton.classList.add('removeBtn');
