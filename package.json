@@ -1,37 +1,42 @@
 {
-  "name": "To-do-list",
+  "name": "webpackproject",
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "dependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
-    "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.25.2",
-    "hint": "^6.1.6",
-    "lodash": "^4.17.21",
-    "stylelint": "^13.13.1",
-    "stylelint-config-standard": "^21.0.0",
-    "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0"
-  },
-  "devDependencies": {
-    "html-webpack-plugin": "^5.5.0",
-    "webpack-cli": "^4.9.1"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --open",
     "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/algerina/To-do-list.git"
+    "url": "git+https://github.com/webdevmaxi/WebPackProject.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/algerina/To-do-list/issues"
+    "url": "https://github.com/webdevmaxi/WebPackProject/issues"
   },
-  "homepage": "https://github.com/algerina/To-do-list#readme"
+  "homepage": "https://github.com/webdevmaxi/WebPackProject#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^6.2.0",
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "hint": "^6.1.4",
+    "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.1.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.20.1",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^4.4.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
