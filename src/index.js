@@ -1,15 +1,16 @@
 import './style.css';
+// eslint-disable-next-line no-unused-vars
 import _ from 'lodash';
 
 const Tasks = [];
 let count = 0;
 
 class Todo {
-    constructor(description, completed, index) {
-        this.description = description;
-        this.completed = completed;
-        this.index = index;
-    }
+  constructor(description, completed, index) {
+    this.description = description;
+    this.completed = completed;
+    this.index = index;
+  }
 }
 
 Tasks.push(new Todo('Read', false, (count += 1)));
@@ -18,13 +19,11 @@ Tasks.push(new Todo('Cook', false, (count += 1)));
 
 const Items = document.createElement('div');
 
-console.log(Items);
-
 const addList = () => {
-    Tasks.forEach((task) => {
-        const taskItem = document.createElement('div');
+  Tasks.forEach((task) => {
+    const taskItem = document.createElement('div');
 
-        const descriptionElem = document.createElement('span');
+    const descriptionElem = document.createElement('span');
     descriptionElem.innerText = task.description;
     const checkBox = document.createElement('input');
     checkBox.type = 'checkbox';
@@ -32,17 +31,17 @@ const addList = () => {
     taskItem.appendChild(checkBox);
     taskItem.appendChild(descriptionElem);
     Items.appendChild(taskItem);
-    });
+  });
 
-document.getElementById('items').appendChild(Items);
+  document.getElementById('items').appendChild(Items);
 
-const removeButton = document.createElement('button');
-removeButton.classList.add('removeBtn');
-removeButton.innerText = 'Clear all completed';
-removeButton.type = 'button';
-Items.appendChild(removeButton);
+  const removeButton = document.createElement('button');
+  removeButton.classList.add('removeBtn');
+  removeButton.innerText = 'Clear all completed';
+  removeButton.type = 'button';
+  Items.appendChild(removeButton);
 
-return Items;
+  return Items;
 };
 
-addList(); 
+addList();

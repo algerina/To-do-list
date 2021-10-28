@@ -1,48 +1,47 @@
 body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-family: verdana, sans Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: verdana, sans Verdana, Geneva, Tahoma, sans-serif;
 }
 
 ::placeholder {
-    font-style: italic;
+  font-style: italic;
 }
 
 #container {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid gray;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
 }
 
 h3 {
-    margin: 0;
-    padding: 0.5rem 1rem;
+  margin: 0;
+  padding: 0.5rem 1rem;
 }
 
 #items {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .element {
-    padding: 0.5rem 1rem;
-    margin: 1px 0;
-    border-bottom: 1px solid black;
+  padding: 0.5rem 1rem;
+  margin: 1px 0;
+  border-bottom: 1px solid black;
 }
 
 span {
-    padding: 0 0.5rem;
+  padding: 0 0.5rem;
 }
 
 .removeBtn {
-    width: 100%;
-    padding: 1rem;
-    font-size: large;
-    color:  hsl(11deg 100% 52%);
+  width: 100%;
+  padding: 1rem;
+  font-size: large;
+  color: hsl(11deg 100% 52%);
 }
 
 input {
-    padding: 0.5rem 1rem;
-  }
-
+  padding: 0.5rem 1rem;
+}
