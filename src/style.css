@@ -40,11 +40,10 @@ span {
   padding: 1rem;
   font-size: large;
   color: #47525d;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 input {
-  padding: 0.5rem 1rem;
   border: none;
   border-bottom: 0.2px solid #b2b2b2;
   color: #7a7a7a;
