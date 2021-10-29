@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: verdana, sans Verdana, Geneva, Tahoma, sans-serif;
+}
+
+::placeholder {
+  font-style: italic;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid gray;
+}
+
+h3 {
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+
+#items {
+  display: flex;
+  flex-direction: column;
+}
+
+.element {
+  padding: 0.5rem 1rem;
+  margin: 1px 0;
+  border-bottom: 1px solid rgb(168, 164, 164);
+}
+
+span {
+  padding: 0 0.5rem;
+}
+
+.removeBtn {
+  width: 100%;
+  padding: 1rem;
+  font-size: large;
+  color: #47525d;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+  border: none;
+  border-bottom: 0.2px solid #b2b2b2;
+  color: #7a7a7a;
+  padding: 10px 33px;
+  margin: 0;
+}
