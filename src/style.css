@@ -28,7 +28,7 @@ h3 {
 .element {
   padding: 0.5rem 1rem;
   margin: 1px 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(168, 164, 164);
 }
 
 span {
@@ -39,9 +39,15 @@ span {
   width: 100%;
   padding: 1rem;
   font-size: large;
-  color: hsl(11deg 100% 52%);
+  color: #47525d;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 input {
   padding: 0.5rem 1rem;
+  border: none;
+  border-bottom: 0.2px solid #b2b2b2;
+  color: #7a7a7a;
+  padding: 10px 33px;
+  margin: 0;
 }
